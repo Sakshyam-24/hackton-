@@ -1,0 +1,56 @@
+# =============================================================================
+# Legal Advisor AI — .gitignore
+# =============================================================================
+
+# --- Environment / Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+*.whl
+.venv/
+venv/
+ENV/
+
+# --- Node ---
+node_modules/
+frontend/dist/
+frontend/build/
+frontend/.cache/
+frontend/.next/
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Testing ---
+.coverage
+htmlcov/
+.pytest_cache/
+.nyc_output/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Docker ---
+docker-compose.override.yml
+
+# --- OS ---
+.DS_Store
+Desktop.ini
