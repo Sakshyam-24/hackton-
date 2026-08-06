@@ -28,6 +28,13 @@ frontend/dist/
 frontend/build/
 frontend/.cache/
 frontend/.next/
+frontend/tsconfig.tsbuildinfo
+
+# --- Large files ---
+*.mp4
+*.mp3
+*.avi
+*.mov
 
 # --- IDE / Editor ---
 .vscode/
