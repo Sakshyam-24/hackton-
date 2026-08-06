@@ -23,6 +23,7 @@ class Settings(BaseSettings):
     REDIS_URL: Optional[str] = None
 
     OPENAI_API_KEY: Optional[str] = None
+    OPENAI_BASE_URL: Optional[str] = None
     OPENAI_MODEL: str = "gpt-4o"
     OPENAI_EMBEDDING_MODEL: str = "text-embedding-3-small"
 
