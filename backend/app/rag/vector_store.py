@@ -13,12 +13,12 @@ from app.core.logger import logger
 class VectorStore:
     """NumPy-based vector store using cosine similarity."""
 
-    def __init__(self, dimension: int = 1536):
-        self.dimension = dimension
+    def __init__(self, dimension: int = None):
+        settings = get_settings()
+        self.dimension = dimension or settings.EMBEDDING_DIMENSION
         self.vectors: Optional[np.ndarray] = None
         self.chunk_ids: list[str] = []
         self.chunk_metadata: list[dict] = []
-        settings = get_settings()
         self.index_path = Path(settings.FAISS_INDEX_PATH)
         self.index_path.mkdir(parents=True, exist_ok=True)
 

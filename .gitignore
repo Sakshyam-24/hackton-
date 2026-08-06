@@ -61,3 +61,13 @@ docker-compose.override.yml
 # --- OS ---
 .DS_Store
 Desktop.ini
+
+# --- Vector store / processed data ---
+data/faiss_index/
+data/embeddings/
+data/raw/*.pdf
+backend/data/faiss_index/
+backend/data/processed/
+backend/data/raw/*.pdf
+*.index
+*.npy

@@ -1,6 +1,7 @@
 """Configuration settings for the Legal Advisor AI."""
 
 from functools import lru_cache
+from pathlib import Path
 from typing import Annotated, Optional
 from pydantic import field_validator
 from pydantic_settings import BaseSettings, NoDecode
@@ -28,9 +29,15 @@ class Settings(BaseSettings):
     ANTHROPIC_API_KEY: Optional[str] = None
     ANTHROPIC_MODEL: str = "claude-sonnet-4-20250514"
 
-    LLM_PROVIDER: str = "openai"
+    GEMINI_API_KEY: Optional[str] = None
+    GEMINI_MODEL: str = "gemini-1.5-flash"
+    GEMINI_EMBEDDING_MODEL: str = "models/gemini-embedding-001"
+    EMBEDDING_DIMENSION: int = 3072
 
-    FAISS_INDEX_PATH: str = "./data/faiss_index"
+    LLM_PROVIDER: str = "gemini"
+    EMBEDDING_PROVIDER: str = "local"  # "gemini", "openai", or "local"
+
+    FAISS_INDEX_PATH: str = str(Path(__file__).resolve().parent.parent.parent.parent / "data" / "faiss_index")
     CHUNK_SIZE: int = 1000
     CHUNK_OVERLAP: int = 200
     TOP_K_RETRIEVAL: int = 10

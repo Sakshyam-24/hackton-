@@ -105,9 +105,53 @@ class AnthropicProvider(LLMProvider):
         )
 
 
+class GeminiProvider(LLMProvider):
+    """Google Gemini LLM provider."""
+
+    def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None):
+        settings = get_settings()
+        self.api_key = api_key or settings.GEMINI_API_KEY
+        self.model = model or settings.GEMINI_MODEL
+
+    async def generate(self, messages: list[dict], system_prompt: str = "") -> str:
+        if not self.api_key:
+            return self._fallback_response(messages)
+
+        try:
+            import google.generativeai as genai
+            genai.configure(api_key=self.api_key)
+            model = genai.GenerativeModel(
+                self.model,
+                system_instruction=system_prompt if system_prompt else None,
+            )
+
+            contents = []
+            for msg in messages:
+                role = "user" if msg["role"] in ("user", "system") else "model"
+                contents.append({"role": role, "parts": [msg["content"]]})
+
+            response = model.generate_content(contents)
+            return response.text
+        except Exception as e:
+            logger.error(f"Gemini API error: {e}")
+            return self._fallback_response(messages)
+
+    def _fallback_response(self, messages: list[dict]) -> str:
+        last_msg = messages[-1]["content"] if messages else ""
+        return (
+            f"I understand your question about: \"{last_msg[:100]}\"\n\n"
+            "I'm currently running in demo mode without an AI language model connected. "
+            "To get full AI-powered legal responses, please configure a GEMINI_API_KEY "
+            "in your .env file.\n\n"
+            "*This is a demo response. For actual legal advice, please consult a qualified attorney.*"
+        )
+
+
 def get_llm_provider() -> LLMProvider:
     """Factory function to get the configured LLM provider."""
     settings = get_settings()
     if settings.LLM_PROVIDER == "anthropic":
         return AnthropicProvider()
+    if settings.LLM_PROVIDER == "gemini":
+        return GeminiProvider()
     return OpenAIProvider()

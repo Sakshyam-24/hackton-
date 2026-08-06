@@ -7,6 +7,7 @@ python-jose[cryptography]
 passlib[bcrypt]
 openai
 anthropic
+google-genai>=1.0.0
 numpy
 python-dotenv
 PyPDF2
