@@ -81,7 +81,7 @@ const glossaryTerms: GlossaryTerm[] = [
   },
   {
     id: '12',
-    term: 'IPC (Indian Penal Code)',
+    term: 'IPC (Nepal Labour Code)',
     definition: 'The official criminal code of India, drafted in 1860 and came into force in 1862.',
     category: 'Criminal',
   },
@@ -176,7 +176,7 @@ export default function GlossaryPage() {
         >
           <h1 className="text-3xl font-bold text-dark-900 mb-2">Legal Glossary</h1>
           <p className="text-dark-600">
-            Comprehensive guide to legal terminology used in Indian law.
+            Comprehensive guide to legal terminology used in Nepal law.
           </p>
         </motion.div>
 

@@ -104,7 +104,7 @@ export default function DisclaimerPage() {
               >
                 <h2 className="text-2xl font-bold text-dark-900 mb-4">Jurisdiction</h2>
                 <p className="text-dark-600">
-                  This platform primarily provides information related to Indian law. Legal information for
+                  This platform primarily provides information related to Nepal law. Legal information for
                   other jurisdictions may be limited or unavailable. Users outside India should consult local
                   legal professionals for jurisdiction-specific advice.
                 </p>

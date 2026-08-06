@@ -334,7 +334,7 @@ export default function KnowYourRightsPage() {
         >
           <h1 className="text-3xl font-bold text-dark-900 mb-2">Know Your Rights</h1>
           <p className="text-dark-600">
-            Understand your fundamental and legal rights under Indian law.
+            Understand your fundamental and legal rights under Nepal law.
           </p>
         </motion.div>
 

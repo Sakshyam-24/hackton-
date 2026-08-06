@@ -149,7 +149,7 @@ export default function CategoriesPage() {
         >
           <h1 className="text-3xl font-bold text-dark-900 mb-2">Legal Categories</h1>
           <p className="text-dark-600">
-            Explore different areas of Indian law. Click on a category to get started.
+            Explore different areas of Nepal law. Click on a category to get started.
           </p>
         </motion.div>
 

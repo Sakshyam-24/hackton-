@@ -26,7 +26,7 @@ const features = [
   {
     icon: FileText,
     title: 'Legal Citations',
-    description: 'Responses backed by Indian legal databases',
+    description: 'Responses backed by Nepal legal databases',
   },
   {
     icon: Shield,
@@ -160,7 +160,7 @@ export default function AuthLayout({ children, title, subtitle }: AuthLayoutProp
               Your AI Legal Companion
             </h2>
             <p className="text-white/80 text-lg mb-8">
-              Get expert legal guidance powered by artificial intelligence. Ask questions about Indian law and receive instant, accurate responses.
+              Get expert legal guidance powered by artificial intelligence. Ask questions about Nepal law and receive instant, accurate responses.
             </p>
 
             {/* Features */}

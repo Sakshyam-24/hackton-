@@ -17,7 +17,7 @@ const faqs: FAQ[] = [
     id: '1',
     question: 'What is Legal Advisor AI?',
     answer:
-      'Legal Advisor AI is an AI-powered platform that provides instant legal guidance and information about Indian law. It uses advanced natural language processing to understand your questions and provide accurate, citation-backed responses.',
+      'Legal Advisor AI is an AI-powered platform that provides instant legal guidance and information about Nepal law. It uses advanced natural language processing to understand your questions and provide accurate, citation-backed responses.',
     category: 'General',
   },
   {
@@ -31,14 +31,14 @@ const faqs: FAQ[] = [
     id: '3',
     question: 'What types of legal questions can I ask?',
     answer:
-      'You can ask questions about various areas of Indian law including constitutional law, criminal law, family law, property law, corporate law, labor law, consumer protection, cyber law, and tax law.',
+      'You can ask questions about various areas of Nepal law including constitutional law, criminal law, family law, property law, corporate law, labor law, consumer protection, cyber law, and tax law.',
     category: 'General',
   },
   {
     id: '4',
     question: 'How accurate is the legal information provided?',
     answer:
-      'Our AI is trained on comprehensive Indian legal databases including the Constitution, Indian Penal Code, and various acts. While we strive for accuracy, legal information is subject to change and may vary by jurisdiction. Always verify critical information through official sources.',
+      'Our AI is trained on comprehensive Nepal legal databases including the Constitution, Nepal Labour Code, and various acts. While we strive for accuracy, legal information is subject to change and may vary by jurisdiction. Always verify critical information through official sources.',
     category: 'General',
   },
   {
@@ -64,9 +64,9 @@ const faqs: FAQ[] = [
   },
   {
     id: '8',
-    question: 'What are my fundamental rights under the Indian Constitution?',
+    question: 'What are my fundamental rights under the Nepal Constitution?',
     answer:
-      'The Indian Constitution guarantees six fundamental rights: 1) Right to Equality (Articles 14-18), 2) Right to Freedom (Articles 19-22), 3) Right against Exploitation (Articles 23-24), 4) Right to Freedom of Religion (Articles 25-28), 5) Cultural and Educational Rights (Articles 29-30), and 6) Right to Constitutional Remedies (Article 32).',
+      'The Nepal Constitution guarantees six fundamental rights: 1) Right to Equality (Articles 14-18), 2) Right to Freedom (Articles 19-22), 3) Right against Exploitation (Articles 23-24), 4) Right to Freedom of Religion (Articles 25-28), 5) Cultural and Educational Rights (Articles 29-30), and 6) Right to Constitutional Remedies (Article 32).',
     category: 'Legal Knowledge',
   },
   {
@@ -127,7 +127,7 @@ export default function FAQPage() {
         >
           <h1 className="text-3xl font-bold text-dark-900 mb-2">Frequently Asked Questions</h1>
           <p className="text-dark-600">
-            Find answers to common questions about Legal Advisor AI and Indian law.
+            Find answers to common questions about Legal Advisor AI and Nepal law.
           </p>
         </motion.div>
 

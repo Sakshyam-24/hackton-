@@ -138,7 +138,7 @@ export default function LoginPage() {
         <div className="max-w-lg text-white">
           <h2 className="text-3xl font-bold mb-4">Get AI-Powered Legal Assistance</h2>
           <p className="text-gray-400 text-lg">
-            Access comprehensive legal information and get instant answers to your questions about Indian law.
+            Access comprehensive legal information and get instant answers to your questions about Nepal law.
           </p>
           <div className="mt-8 space-y-4">
             <div className="flex items-center gap-3">

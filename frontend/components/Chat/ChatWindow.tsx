@@ -54,7 +54,7 @@ function EmptyState({ suggestedQuestions, onSuggestionClick }: {
           Welcome to Legal Advisor AI
         </h2>
         <p className="text-gray-400 mb-10 max-w-md mx-auto leading-relaxed">
-          Ask me anything about Indian law. I can help with legal questions,
+          Ask me anything about Nepal law. I can help with legal questions,
           explain sections of acts, and provide relevant citations.
         </p>
       </motion.div>
@@ -107,7 +107,7 @@ export default function ChatWindow({
   return (
     <div
       ref={containerRef}
-      className="flex-1 overflow-y-auto px-4 sm:px-6 lg:px-8 py-6 scrollbar-thin"
+      className="flex-1 overflow-y-auto px-4 sm:px-6 lg:px-8 py-6"
     >
       {messages.length === 0 && !isLoading ? (
         <EmptyState

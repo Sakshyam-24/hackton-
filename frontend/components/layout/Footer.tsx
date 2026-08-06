@@ -64,7 +64,7 @@ export default function Footer() {
                 <span className="text-xl font-bold">LegalAdvisor AI</span>
               </Link>
               <p className="text-dark-400 text-sm leading-relaxed mb-6 max-w-sm">
-                Your AI-powered legal advisor for Indian law. Get instant answers to your legal questions with citations from Indian legal databases.
+                Your AI-powered legal advisor for Nepal law. Get instant answers to your legal questions with citations from Nepal legal databases.
               </p>
 
               {/* Social Links */}

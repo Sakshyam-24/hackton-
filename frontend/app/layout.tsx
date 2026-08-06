@@ -72,7 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} min-h-screen bg-black text-white font-sans antialiased`}
+        className={`${inter.variable} ${jetbrainsMono.variable} h-screen overflow-hidden bg-black text-white font-sans antialiased`}
       >
         <I18nProvider>{children}</I18nProvider>
       </body>

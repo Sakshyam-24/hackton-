@@ -45,7 +45,7 @@ export default function HistoryPage() {
       {
         id: '2',
         title: 'Criminal Law - IPC Section 302',
-        lastMessage: 'Section 302 of the Indian Penal Code deals with punishment for murder...',
+        lastMessage: 'Section 302 of the Nepal Labour Code deals with punishment for murder...',
         messageCount: 8,
         createdAt: new Date(Date.now() - 172800000).toISOString(),
         updatedAt: new Date(Date.now() - 86400000).toISOString(),

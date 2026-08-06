@@ -36,7 +36,7 @@ const CATEGORIES = [
 ];
 
 const SUGGESTED = [
-  'Fundamental rights under Indian Constitution',
+  'Fundamental rights under Nepal Constitution',
   'Grounds for divorce under Hindu Marriage Act',
   'Employer termination rights',
   'Property inheritance rules',
